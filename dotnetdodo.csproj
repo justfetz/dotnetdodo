@@ -4,10 +4,14 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+      <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.OrTools" Version="9.5.2237" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Models\OrderModel.cs" />
   </ItemGroup>
+
 
 </Project>
