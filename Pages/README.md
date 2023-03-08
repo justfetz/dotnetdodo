@@ -1,4 +1,4 @@
-# DotNetDodo
+# dotnetdodo
 ## Introduction
 DotNetDodo is an ASP.NET Core web application that helps manage a paper manufacturing business. The application provides tools for solving common manufacturing problems, including the cutting stock problem, bin packing problem, and transportation problem.
 
