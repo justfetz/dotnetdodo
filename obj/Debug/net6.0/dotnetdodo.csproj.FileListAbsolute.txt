@@ -36,3 +36,4 @@ C:\Users\jfetzer\desktop\repos\dotnetdodo\obj\Debug\net6.0\dotnetdodo.dll
 C:\Users\jfetzer\desktop\repos\dotnetdodo\obj\Debug\net6.0\ref\dotnetdodo.dll
 C:\Users\jfetzer\desktop\repos\dotnetdodo\obj\Debug\net6.0\dotnetdodo.pdb
 C:\Users\jfetzer\desktop\repos\dotnetdodo\obj\Debug\net6.0\dotnetdodo.genruntimeconfig.cache
+C:\Users\jfetzer\Desktop\repos\dotnetdodo\obj\Debug\net6.0\dotnetdodo.MvcApplicationPartsAssemblyInfo.cs
