@@ -11,6 +11,14 @@
     <PackageReference Include="Google.OrTools" Version="9.5.2237" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Models\OrderModel.cs" />
+    <Compile Remove="Pages\**" />
+    <Content Remove="Pages\**" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.0" />
+    <Compile Include="Pages\**\*.cshtml.cs" />
+    <Compile Include="Pages\**\*.cshtml" />
+    <Compile Include="Pages\**\*.cshtml.css" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
+
   </ItemGroup>
 
 

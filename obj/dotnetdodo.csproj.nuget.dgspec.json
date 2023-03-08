@@ -43,6 +43,14 @@
             "Google.OrTools": {
               "target": "Package",
               "version": "[9.5.2237, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
