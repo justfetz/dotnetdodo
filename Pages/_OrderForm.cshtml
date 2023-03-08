@@ -12,5 +12,10 @@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-
+<ul>
+    @foreach (var input in Model.Inputs)
+    {
+        <li>@input</li>
+    }
+</ul>
 
