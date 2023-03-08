@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using dotnetdodo.Models;
+using dotnetdodo.Models.Order;
 
 
 namespace dotnetdodo.Controllers
