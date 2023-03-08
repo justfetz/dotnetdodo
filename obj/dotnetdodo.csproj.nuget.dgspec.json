@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jfetzer\\desktop\\repos\\dotnetdodo\\dotnetdodo.csproj": {}
+    "C:\\Users\\jfetzer\\Desktop\\repos\\dotnetdodo\\dotnetdodo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jfetzer\\desktop\\repos\\dotnetdodo\\dotnetdodo.csproj": {
+    "C:\\Users\\jfetzer\\Desktop\\repos\\dotnetdodo\\dotnetdodo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jfetzer\\desktop\\repos\\dotnetdodo\\dotnetdodo.csproj",
+        "projectUniqueName": "C:\\Users\\jfetzer\\Desktop\\repos\\dotnetdodo\\dotnetdodo.csproj",
         "projectName": "dotnetdodo",
-        "projectPath": "C:\\Users\\jfetzer\\desktop\\repos\\dotnetdodo\\dotnetdodo.csproj",
+        "projectPath": "C:\\Users\\jfetzer\\Desktop\\repos\\dotnetdodo\\dotnetdodo.csproj",
         "packagesPath": "C:\\Users\\jfetzer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jfetzer\\desktop\\repos\\dotnetdodo\\obj\\",
+        "outputPath": "C:\\Users\\jfetzer\\Desktop\\repos\\dotnetdodo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jfetzer\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,19 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace dotnetdodo.Pages;
-
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
-
     public void OnGet()
     {
+    }
 
+    public IActionResult OnPost(string customerName, string paperType, int width)
+    {
+        // TODO: Process the form data and save to the database
+        return Page();
     }
 }

@@ -1,8 +1,21 @@
 ﻿@page
-@model PrivacyModel
-@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+@model IndexModel
 
-<p>Use this page to detail your site's privacy policy.</p>
+<form>
+    <div>
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName">
+    </div>
+    <div>
+        <label for="paperType">Paper Type:</label>
+        <select id="paperType" name="paperType">
+            <option value="kraft">Kraft</option>
+            <option value="white">White</option>
+        </select>
+    </div>
+    <div>
+        <label for="width">Width:</label>
+        <input type="number" id="width" name="width">
+    </div>
+    <button type="submit">Submit</button>
+</form>
