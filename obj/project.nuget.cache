@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "r//wG2bSMsSX00Pu5VWAQuru0u3qT039M4we9uUzXE6MyCd2rtL96STWq0MbXdtu7dqbDitGVNUDwe3S+GGf0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jfetzer\\desktop\\repos\\dotnetdodo\\dotnetdodo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.ortools\\9.5.2237\\google.ortools.9.5.2237.nupkg.sha512",
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.ortools.runtime.linux-arm64\\9.5.2237\\google.ortools.runtime.linux-arm64.9.5.2237.nupkg.sha512",
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.ortools.runtime.linux-x64\\9.5.2237\\google.ortools.runtime.linux-x64.9.5.2237.nupkg.sha512",
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.ortools.runtime.osx-arm64\\9.5.2237\\google.ortools.runtime.osx-arm64.9.5.2237.nupkg.sha512",
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.ortools.runtime.osx-x64\\9.5.2237\\google.ortools.runtime.osx-x64.9.5.2237.nupkg.sha512",
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.ortools.runtime.win-x64\\9.5.2237\\google.ortools.runtime.win-x64.9.5.2237.nupkg.sha512",
+    "C:\\Users\\jfetzer\\.nuget\\packages\\google.protobuf\\3.21.5\\google.protobuf.3.21.5.nupkg.sha512"
+  ],
+  "logs": []
+}

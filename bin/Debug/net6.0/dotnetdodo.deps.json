@@ -1,0 +1,164 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "dotnetdodo/1.0.0": {
+        "dependencies": {
+          "Google.OrTools": "9.5.2237"
+        },
+        "runtime": {
+          "dotnetdodo.dll": {}
+        }
+      },
+      "Google.OrTools/9.5.2237": {
+        "dependencies": {
+          "Google.OrTools.runtime.linux-arm64": "9.5.2237",
+          "Google.OrTools.runtime.linux-x64": "9.5.2237",
+          "Google.OrTools.runtime.osx-arm64": "9.5.2237",
+          "Google.OrTools.runtime.osx-x64": "9.5.2237",
+          "Google.OrTools.runtime.win-x64": "9.5.2237",
+          "Google.Protobuf": "3.21.5"
+        },
+        "runtime": {
+          "lib/net6.0/Google.OrTools.dll": {
+            "assemblyVersion": "9.5.2237.0",
+            "fileVersion": "9.5.2237.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.linux-arm64/9.5.2237": {
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/google-ortools-native.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libortools.so.9": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.linux-x64/9.5.2237": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/google-ortools-native.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libortools.so.9": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.osx-arm64/9.5.2237": {
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/google-ortools-native.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libortools.9.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.osx-x64/9.5.2237": {
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/google-ortools-native.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libortools.9.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.win-x64/9.5.2237": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/google-ortools-native.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.21.5": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.21.5.0",
+            "fileVersion": "3.21.5.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "dotnetdodo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.OrTools/9.5.2237": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+CldTvg2LklmYMwIiG3APmbUfIC+HxYth7266BzYUbvwz0eSDbc6VWyNGlLTav+T9Q5sEpZ+fyzu9wZSWw3DJw==",
+      "path": "google.ortools/9.5.2237",
+      "hashPath": "google.ortools.9.5.2237.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.linux-arm64/9.5.2237": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P/WRUdtx3tT+cFxVHn3ddbUAbSAL2GBnj/dzU4PgEvyw/dYBUguIrjap5zZWRaPy44hC6Xo2yHCTEuZP1T6eNg==",
+      "path": "google.ortools.runtime.linux-arm64/9.5.2237",
+      "hashPath": "google.ortools.runtime.linux-arm64.9.5.2237.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.linux-x64/9.5.2237": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hx/zJwpwgfck5BKGVRqBHT411TYSR/BvXYe7mxMcydcKQ7R7an8OBxEymsTeplGPA1++BfVD9TYOHBhWrf0pTQ==",
+      "path": "google.ortools.runtime.linux-x64/9.5.2237",
+      "hashPath": "google.ortools.runtime.linux-x64.9.5.2237.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.osx-arm64/9.5.2237": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ogn2QMltkutVWL3+d6aLILiJ8fT9571oC0t0k3zBJB7xFYxDMcRKI6T2vQAQZZDygfBLG2WxzxBuuPhGSVVdLQ==",
+      "path": "google.ortools.runtime.osx-arm64/9.5.2237",
+      "hashPath": "google.ortools.runtime.osx-arm64.9.5.2237.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.osx-x64/9.5.2237": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XjYbvBhB6rJEYJDabjI1V0hmI1EzAAvAystT03XyNHiPKn1qhot3kMMv/QBjIAhuJ1i3FsqIc5TaG8rvvhNzTA==",
+      "path": "google.ortools.runtime.osx-x64/9.5.2237",
+      "hashPath": "google.ortools.runtime.osx-x64.9.5.2237.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.win-x64/9.5.2237": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RAxy322SGoNJ/+i4h4xnx2JX98KqtVoK6cKSctE6rLcZGJeE1AD+mp1nn36TYXGUDkBq4QQkcLHIEQ75EjC5Sw==",
+      "path": "google.ortools.runtime.win-x64/9.5.2237",
+      "hashPath": "google.ortools.runtime.win-x64.9.5.2237.nupkg.sha512"
+    },
+    "Google.Protobuf/3.21.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d7zwRm0edg2cxqRynMD31F8HUUyicBT0l5M74EIsU6GAaq3dxxaZ/PpSPlso010W9nIXoVVKUYZSsiOspAOO/A==",
+      "path": "google.protobuf/3.21.5",
+      "hashPath": "google.protobuf.3.21.5.nupkg.sha512"
+    }
+  }
+}
