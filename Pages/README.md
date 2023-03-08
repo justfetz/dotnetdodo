@@ -1,4 +1,4 @@
-# DotNetDodo
+# dotnetdodo
 ## Introduction
 DotNetDodo is an ASP.NET Core web application that helps manage a paper manufacturing business. The application provides tools for solving common manufacturing problems, including the cutting stock problem, bin packing problem, and transportation problem.
 
@@ -8,19 +8,22 @@ Microsoft SQL Server Express or later
 Git
 Installation
 Clone the repository:
-
+```
 bash
 Copy code
 git clone https://github.com/justfetz/dotnetdodo.git
 Install the required packages:
+```
 
 Copy code
-dotnet restore
+```dotnet restore
 Create the database using Entity Framework Core migrations:
-
+```
+```
 sql
 Copy code
 dotnet ef database update
+```
 Start the application:
 
 Copy code
