@@ -1,21 +1,19 @@
+@page
+
 @model dotnetdodo.Models.OrderFormModel
 
 <form method="post">
     <div class="form-group">
-        <label for="Widths">Widths (separated by comma):</label>
-        <input type="text" class="form-control" id="Widths" name="Widths">
+        <label for="widths">Widths (comma separated)</label>
+        <input id="widths" name="widths" type="text" class="form-control" required />
     </div>
     <div class="form-group">
-        <label for="Demands">Demands (separated by comma):</label>
-        <input type="text" class="form-control" id="Demands" name="Demands">
+        <label for="demands">Demands (comma separated)</label>
+        <input id="demands" name="demands" type="text" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="stock">Stock Item Width</label>
+        <input id="stock" name="stock" type="number" class="form-control" required />
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
-<ul>
-    @foreach (var input in Model.Inputs)
-    {
-        <li>@input</li>
-    }
-</ul>
-
