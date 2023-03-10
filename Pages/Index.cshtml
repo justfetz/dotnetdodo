@@ -3,5 +3,34 @@
 
 <h1>Order Form</h1>
 
-@Html.Partial("_OrderForm");
+@Html.Partial("_OrderForm")
 
+<div id="inputs-container"></div>
+
+<script>
+    $(document).ready(function () {
+        $('#order-form').submit(function (event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Retrieve the form data using JavaScript
+            var formData = new FormData(this);
+
+            // Send an AJAX request to submit the form data
+            $.ajax({
+                type: 'POST',
+                url: '/OrderForm',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    // Update the inputs container with the returned values
+                    $('#inputs-container').html(response.inputsHtml);
+                },
+                error: function () {
+                    alert('An error occurred while submitting the form.');
+                }
+            });
+        });
+    });
+</script>
