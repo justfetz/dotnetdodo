@@ -1,48 +1,11 @@
 ﻿@page
 
-@model dotnetdodo.Pages.IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
 
 <h1>Order Form</h1>
 
 @Html.Partial("_OrderForm")
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Order Form</h2>
-            <hr />
-            <form method="post" asp-page-handler="submit">
-                <div class="form-group">
-                    <label asp-for="CuttingStockInput.StockItemWidth">Stock Item Width</label>
-                    <input asp-for="CuttingStockInput.StockItemWidth" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="CuttingStockInput.Widths">Widths</label>
-                    <input asp-for="CuttingStockInput.Widths" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="CuttingStockInput.Demands">Demands</label>
-                    <input asp-for="CuttingStockInput.Demands" class="form-control" />
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-        <div class="col-md-6">
-            @if (Model.OptimalPatterns != null)
-            {
-                <h2>Optimal Patterns</h2>
-                <hr />
-                @foreach (var pattern in Model.OptimalPatterns)
-                {
-                    <p>Pattern: @string.Join(",", pattern.Pattern) - Waste: @pattern.Waste</p>
-                }
-            }
-        </div>
-    </div>
-</div>
+
 
 
 
