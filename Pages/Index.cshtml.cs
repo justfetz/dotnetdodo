@@ -1,18 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public class IndexModel : PageModel
+using System.Collections.Generic;
+using System.Linq;
+
+namespace dotnetdodo.Pages
 {
-    public void OnGet()
+    public class IndexModel : PageModel
     {
+        private readonly CuttingStockSolver _cuttingStockSolver;
+
+        public IndexModel(CuttingStockSolver cuttingStockSolver)
+        {
+            _cuttingStockSolver = cuttingStockSolver;
+        }
+
+        public void OnGet()
+        {
+
+        }
+
+        public void OnPost()
+        {
+    
+        }
     }
-
-    public IActionResult OnPost(string customerName, string paperType, int width)
-    {
-        // TODO: Process the form data and save to the database
-        return Page();
-    }
-
-  
-
 }

@@ -1,8 +1,4 @@
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -18,39 +14,37 @@ namespace dotnetdodo.Pages
         }
 
         [BindProperty]
-        public int StockItemWidth { get; set; }
+        public CuttingStockInput CuttingStockInput { get; set; }
 
-        [BindProperty]
-        public string Widths { get; set; }
-
-        [BindProperty]
-        public string Demands { get; set; }
-
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            Console.WriteLine($"StockItemWidth: {StockItemWidth}");
-            Console.WriteLine($"Widths: {Widths}");
-            Console.WriteLine($"Demands: {Demands}");
-            List<int> widthsList = Widths.Split(",").Select(int.Parse).ToList();
-            List<int> demandsList = Demands.Split(",").Select(int.Parse).ToList();
+            // Create a new CuttingStockInput object and populate its properties
+            CuttingStockInput = new CuttingStockInput();
+            CuttingStockInput.StockLength = Convert.ToInt16(Request.Form["CuttingStockInput.StockItemWidth"]);
+            string input = Request.Form["CuttingStockInput.Widths"];
+            int[] widths = input.Split(',').Select(int.Parse).ToArray();
 
-            CuttingStockInput cuttingStockInput = new CuttingStockInput
+            CuttingStockInput.Widths = widths;
+            string secinput = Request.Form["CuttingStockInput.Demands"];
+            int[] demands = input.Split(',').Select(int.Parse).ToArray();
+            CuttingStockInput.Demands = demands;
+
+            // Pass the CuttingStockInput object to the CuttingStockSolver service to get the optimal patterns
+            var patterns = CuttingStockSolver.Solve(CuttingStockInput.StockLength, CuttingStockInput.Widths, CuttingStockInput.Demands);
+
+            // Write the optimal patterns to the console
+            foreach (var pattern in patterns)
             {
-                
-                Widths = widthsList.ToArray(),
-                Demands = demandsList.ToArray(),
-                StockLength= StockItemWidth
-            };
-
-            var results = CuttingStockSolver.Solve(cuttingStockInput.StockLength, cuttingStockInput.Widths, cuttingStockInput.Demands);
-            Console.WriteLine($"Results: {string.Join(",", results)}");
+                Console.WriteLine("Pattern: " + pattern);
+              
+            }
 
             return Page();
         }
     }
 }
-
