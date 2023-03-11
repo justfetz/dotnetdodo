@@ -1,6 +1,7 @@
-public class Input
+public class CuttingStockInput
 {
-    public int StockItemWidth { get; set; }
-    public List<int> Widths { get; set; }
-    public List<int> Demands { get; set; }
+    
+    public int[] Widths { get; set; }
+    public int[] Demands { get; set; }
+    public int StockLength { get; set; }
 }
