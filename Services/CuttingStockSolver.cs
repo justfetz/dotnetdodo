@@ -9,6 +9,11 @@ public class CuttingStockSolver
         // Initialize solver
         Solver solver = new Solver("CuttingStockSolver", Solver.OptimizationProblemType.CLP_LINEAR_PROGRAMMING);
         
+        //Write to console
+        Console.WriteLine("Stock length: " + stockLength);
+        Console.WriteLine("Widths: " + string.Join(", ", widths));
+        Console.WriteLine("Demands: " + string.Join(", ", demands));
+
         // Define variables
         List<Variable> x = new List<Variable>();
         foreach (int width in widths)

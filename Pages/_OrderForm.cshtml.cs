@@ -32,10 +32,19 @@ namespace dotnetdodo.Pages
             List<int> demands = demandsString.Split(",").Select(int.Parse).ToList();
             int stockItemWidth = int.Parse(stockItemWidthString);
 
+            int[] intArray = (int[])widths.ToArray();   
+            int[] demandArray = (int[])demands.ToArray();
             Widths = widths;
             Demands = demands;
             StockItemWidth = stockItemWidth;
+            var solver = new CuttingStockSolver();
 
+
+    // call the Solve method on the CuttingStockSolver with the user inputs
+            var patterns = CuttingStockSolver.Solve(stockItemWidth, intArray, demandArray);
+
+    // pass the patterns to the view using ViewData
+            ViewData["Patterns"] = patterns;
             return Page();
         }
     }
